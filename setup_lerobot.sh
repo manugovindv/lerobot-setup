@@ -16,8 +16,6 @@ echo "[0/9] Updating system and installing dependencies..."
 sudo sed -i 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen
 sudo locale-gen
 sudo update-locale LANG=en_US.UTF-8
-export LANG=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
 
 sudo apt update -y
 sudo DEBIAN_FRONTEND=noninteractive apt upgrade -y
